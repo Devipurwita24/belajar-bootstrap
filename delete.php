@@ -1,9 +1,9 @@
 <?php
 include './koneksi.php';
 
-$nik = $_GET['nik'];
+$id = $_GET['id_penduduk'];
 
-$query = "DELETE FROM data_penduduk WHERE nik=$nik";
+$query = "DELETE FROM data_penduduk ";
 
 $result=$connect->query($query);
 $num = mysqli_affected_rows($connect);
@@ -14,5 +14,5 @@ if($num>0){
     echo "gagal hapus data";
 }
 
-echo "<a href='index.php'>lihat data</a>";
+echo "<a href='tabelpenduduk.php'>lihat data</a>";
 ?>

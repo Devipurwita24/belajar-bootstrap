@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="./assets/bootstrap-4.4.1-dist/bootstrap-4.4.1-dist/css/bootstrap.css">
 </head>
 <body>
-    <center><h1>data penambahan penduduk</h1>
+    <center><h1>data penduduk</h1>
     <div class="container">
         <table width='80%' border=1 class="teks-center">
             <tr>
@@ -27,8 +27,8 @@
                 echo "<td>".$data['nama']."</td>";
                 echo "<td>".$data['daerah']."</td>";
                 echo "<td>".$data['asal_daerah']."</td>";
-                echo "<td><a href='formedit.php?id_user=".$data['nik']."'>edit</a></td>";
-                echo "<td><a href='delete.php?id_user=".$data['nik']."'onclick='return confirm
+                echo "<td><a href='formedit.php?id_penduduk=".$data['id_penduduk']."'>edit</a></td>";
+                echo "<td><a href='delete.php?id_penduduk=".$data['id_penduduk']."'onclick='return confirm
                     (\"apakah anda yakin ingin menghapus data?\")'>hapus</a></td>";
                 echo "</tr>";
             }

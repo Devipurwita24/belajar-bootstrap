@@ -10,11 +10,11 @@
 
 <?php
 
-include'./koneksi.php';
+include './koneksi.php';
 
-$nik = $_GET['nik'];
+$id = $_GET['id_penduduk'];
 
-$query = "SELECT * FROM data_penduduk WHERE nik = '$nik'";
+$query = "SELECT * FROM data_penduduk WHERE id_penduduk = '$id'";
 
 $result = $connect->query($query);
 
